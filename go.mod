@@ -1,4 +1,4 @@
-module example.com/hello
+module github.com/rodrigobello/a-tour-of-go
 
 go 1.16
 

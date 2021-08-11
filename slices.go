@@ -15,6 +15,6 @@ func Pic(dx, dy int) [][]uint8 {
 	return dySlice
 }
 
-func main() {
+func runSlicesExercise() {
 	pic.Show(Pic)
 }

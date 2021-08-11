@@ -1,25 +1,31 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
-	s := []int{2, 3, 5, 7, 11, 13}
-	printSlice(s)
-
-	// Slice the slice to give it zero length.
-	s = s[:0]
-	printSlice(s)
-
-	// Extend its length.
-	s = s[:4]
-	printSlice(s)
-
-	// Drop its first two values.
-	s = s[2:]
-	s = s[:5]
-	printSlice(s)
-}
-
-func printSlice(s []int) {
-	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
+	if len(os.Args) < 2 {
+		fmt.Println("You must enter an exercise name from 'A Tour of Go' Tutorial.")
+		return
+	}
+	switch exercise := os.Args[1]; exercise {
+	case "loops-and-functions":
+		runLoopsAndFunctionsExercise()
+	case "slices":
+		runSlicesExercise()
+	case "maps":
+		runMapsExercise()
+	case "fibonacci":
+		runFibonacciExercise()
+	case "stringer":
+		runStringerExercise()
+	case "errors":
+		runErrorsExercise()
+	case "reader":
+		runReaderExercise()
+	default:
+		fmt.Printf("Invalid exercise: %v\n", exercise)
+	}
 }

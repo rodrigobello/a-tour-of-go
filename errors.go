@@ -26,7 +26,7 @@ func SqrtHandlingNegatives(x float64) (float64, error) {
 	return z, nil
 }
 
-func main() {
+func runErrorsExercise() {
 	fmt.Println(SqrtHandlingNegatives(2))
 	fmt.Println(SqrtHandlingNegatives(-2))
 }

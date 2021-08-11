@@ -16,7 +16,7 @@ func (address IPAddr) String() string {
 	return strings.Join(stringAddress, ".")
 }
 
-func main() {
+func runStringerExercise() {
 	hosts := map[string]IPAddr{
 		"loopback":  {127, 0, 0, 1},
 		"googleDNS": {8, 8, 8, 8},
