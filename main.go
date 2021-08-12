@@ -29,6 +29,8 @@ func main() {
 		runRot13ReaderExercise()
 	case "images":
 		runImagesExercise()
+	case "equivalent-binary-trees":
+		runEquivalentBinaryTreesExercise()
 	default:
 		fmt.Printf("Invalid exercise: %v\n", exercise)
 	}
