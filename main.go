@@ -31,6 +31,8 @@ func main() {
 		runImagesExercise()
 	case "equivalent-binary-trees":
 		runEquivalentBinaryTreesExercise()
+	case "web-crawler":
+		runWebCrawlerExercise()
 	default:
 		fmt.Printf("Invalid exercise: %v\n", exercise)
 	}
