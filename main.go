@@ -25,6 +25,8 @@ func main() {
 		runErrorsExercise()
 	case "reader":
 		runReaderExercise()
+	case "rot-reader":
+		runRot13ReaderExercise()
 	default:
 		fmt.Printf("Invalid exercise: %v\n", exercise)
 	}
